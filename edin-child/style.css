@@ -1,0 +1,22 @@
+/*
+ Theme Name:   Edin-Child
+ Theme URI:    http://example.com/edin-child/
+ Description:  Edin Child Theme
+ Author:       Aaron Seitz
+ Author URI:   http://example.com
+ Template:     edin
+ Version:      1.0.0
+ Text Domain:  edin-child
+*/
+
+@import url("../edin/style.css");
+
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/* HOME PAGE */
+
+.homesearch h1{
+	margin: 0 auto;
+}
