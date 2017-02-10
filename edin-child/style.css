@@ -20,3 +20,35 @@
 .homesearch h1{
 	margin: 0 auto;
 }
+
+
+/* CATEGORY SORT PAGE - ACTIVITIES, EVENTS, & MEET-UPS */
+
+.page-title{
+	background-color: blue;
+}
+
+
+/* CONTENT-EVENTS.PHP */
+
+.fullpost article{
+	border-style: solid 10px blue;
+	border-radius: 10px;
+	background-color: red;
+	padding-top: 0px;
+}
+
+
+.fullpost .fixedimage{
+	width: 20%;
+	height: 60%;
+	float: right;
+}
+
+.sharebar h1{
+	background-color: blue;
+	padding-top: 0;
+}
+
+
+
