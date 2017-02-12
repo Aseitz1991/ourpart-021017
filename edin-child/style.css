@@ -31,17 +31,44 @@
 
 /* CONTENT-EVENTS.PHP */
 
+#share-buttons{
+	float: left;
+	width: 30%;
+}
+#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
+
 .fullpost article{
 	border-style: solid 10px blue;
 	border-radius: 10px;
 	background-color: red;
 	padding-top: 0px;
+	padding-left: 20px;
 }
 
+.fullpost header{
+	width: 60%;
+}
+
+.archive:not(.post-type-archive-jetpack-testimonial) .hentry,
+.blog .hentry,
+.search .hentry {
+	padding-top: 0px; 
+	padding-left: 5px;
+	}
+
+.hero {
+		padding: 0px 0;
+		padding-left: 5px;
+	}
 
 .fullpost .fixedimage{
-	width: 20%;
-	height: 60%;
+	width: 40%;
 	float: right;
 }
 
