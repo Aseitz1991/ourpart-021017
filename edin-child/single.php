@@ -14,6 +14,12 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
+								<!-- LikeBtn.com BEGIN -->
+					<span class="likebtn-wrapper" data-theme="custom" data-icon_l="hrt6" data-icon_l_c_v="#2705fb" data-identifier="item_1" data-dislike_enabled="false" data-icon_dislike_show="false" data-popup_disabled="true"></span>
+					
+					<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+					<!-- LikeBtn.com END -->
+
 					<?php
 						if ( 'jetpack-testimonial' === get_post_type() ) {
 							get_template_part( 'content', 'testimonial' );
