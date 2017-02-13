@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+
 		<div class="home search">
 
 			<h1> WELCOME TO OUR PART </h1>
