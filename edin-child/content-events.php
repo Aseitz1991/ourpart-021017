@@ -37,26 +37,26 @@
 
 		<header class="entry-header">
 
-				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( edin_get_link_url() ) ), '</a></h2>' ); ?>
-
-			<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php edin_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php endif; ?>
+				<h1><?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( edin_get_link_url() ) ), '</a></h2>' ); ?> </h1>
 
 			<!-- The Fixed Image -->
 
-			
-		<div class="fixedimage">
-
+			<div class="fixedimage">
 				<?php
 					if ( 'post' == get_post_type() ) {
 						edin_post_thumbnail();
 					}
 				?>
-
 			</div>
+
+
+				<?php if ( 'post' == get_post_type() ) : ?>
+					<div class="entry-meta">
+						<?php edin_posted_on(); ?>
+					</div><!-- .entry-meta -->
+				<?php endif; ?>
+
+		
 
 
 
@@ -98,5 +98,7 @@
 	</article><!-- #post-## -->
 
 		</div>
+
+
 
 

@@ -31,9 +31,11 @@
 
 /* CONTENT-EVENTS.PHP */
 
+
+
 #share-buttons{
-	float: left;
-	width: 30%;
+	float: right;
+	width: 25%;
 }
 #share-buttons img {
 	width: 35px;
@@ -44,22 +46,52 @@
 }
 
 .fullpost article{
-	border-style: solid 10px blue;
+	border-style: solid;
 	border-radius: 10px;
-	background-color: red;
+	border-color: blue;
 	padding-top: 0px;
-	padding-left: 20px;
+	padding-left: 5px;
+	margin-bottom: 20px;
+}
+
+.sharebar{
+	background-color: blue;
+	padding-left: 0px;
 }
 
 .fullpost header{
+	width: 100%;
+}
+
+.entry-header h1{
 	width: 60%;
 }
 
+.entry-title{
+	width: 60%; 
+	float: left;
+}
+.fullpost .entry-header .fixedimage{
+	width: 40%;
+	float: right;
+}
+
+.fixedimage img{
+	    position: absolute;
+        clip: rect(0px,175px,175px,0px);
+        object-fit: cover;
+        background-position: 50% 50%;
+
+}
+
+.entry-meta{
+	clear: both;
+}
 .archive:not(.post-type-archive-jetpack-testimonial) .hentry,
 .blog .hentry,
 .search .hentry {
-	padding-top: 0px; 
-	padding-left: 5px;
+	padding-top: 10px; 
+	padding-left: 10px;
 	}
 
 .hero {
@@ -67,10 +99,7 @@
 		padding-left: 5px;
 	}
 
-.fullpost .fixedimage{
-	width: 40%;
-	float: right;
-}
+
 
 .sharebar h1{
 	background-color: blue;
