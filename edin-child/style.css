@@ -21,6 +21,20 @@
 	margin: 0 auto;
 }
 
+/* HEADER */
+
+.secondary-navigation .login{
+	background-color: yellow;
+	display: inline-block;
+	margin: 6px 10px;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+
 
 /* CATEGORY SORT PAGE - ACTIVITIES, EVENTS, & MEET-UPS */
 
