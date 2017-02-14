@@ -377,3 +377,19 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load plugin enhancement file to display admin notices.
  */
 require get_template_directory() . '/inc/plugin-enhancements.php';
+
+/**
+ * Isotope Filter pluggin.
+ */
+
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/jquery.isotope.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
+    wp_register_style( 'style-css', get_stylesheet_directory_uri() . '/style.css' );
+
+  	wp_enqueue_script('isotope');
+    wp_enqueue_script('isotope-init');
+    wp_enqueue_style('style-css');
+}
+

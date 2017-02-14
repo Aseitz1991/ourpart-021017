@@ -36,10 +36,14 @@
 		</div>
 
 		<header class="entry-header">
+				<div class="event-box">
+					<div class="event-box-meta">
 
 				<h1><?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( edin_get_link_url() ) ), '</a></h2>' ); ?> </h1>
+				</div>
 
 			<!-- The Fixed Image -->
+			<div class="eventd-image">
 
 			<div class="fixedimage">
 				<?php
@@ -48,6 +52,7 @@
 					}
 				?>
 			</div>
+		</div>
 
 
 				<?php if ( 'post' == get_post_type() ) : ?>
@@ -55,6 +60,7 @@
 						<?php edin_posted_on(); ?>
 					</div><!-- .entry-meta -->
 				<?php endif; ?>
+			</div>
 
 		
 
