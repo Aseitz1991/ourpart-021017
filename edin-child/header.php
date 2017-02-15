@@ -15,8 +15,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<script src="/wp-content/themes/edin/js/isotope.pkgd.min.js"></script>
-
 
 <?php wp_head(); ?>
 </head>

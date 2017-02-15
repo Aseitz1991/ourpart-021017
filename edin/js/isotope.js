@@ -1,3 +1,5 @@
+jQuery(function ($) {
+
 // init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
@@ -49,5 +51,7 @@ $('.button-group').each( function( i, buttonGroup ) {
     $buttonGroup.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
   });
-}
-  
+
+});
+
+});

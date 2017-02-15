@@ -43,5 +43,7 @@
 
 </body>
 
+<script src="/wp-content/themes/edin/js/isotope.pkgd.min.js"></script>
+
 
 </html>
