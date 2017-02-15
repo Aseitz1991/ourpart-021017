@@ -301,6 +301,7 @@ function edin_scripts() {
 	wp_enqueue_style( 'edin-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'edin-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140718', true );
+
 	wp_localize_script( 'edin-navigation', 'screen_reader_text', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'edin' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'edin' ) . '</span>',
@@ -317,6 +318,7 @@ function edin_scripts() {
 	}
 
 	wp_enqueue_script( 'edin-script', get_template_directory_uri() . '/js/edin.js', array( 'jquery' ), '20140606', true );
+
 	wp_localize_script( 'edin-script', 'screen_reader_text', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'edin' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'edin' ) . '</span>',
@@ -378,18 +380,21 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/plugin-enhancements.php';
 
-/**
- * Isotope Filter pluggin.
- */
+if ( ! function_exists('isotope') ) :
 
+add_action( 'wp_enqueue_scripts', 'load_isotope' );
 
-function add_isotope() {
-    wp_register_script( 'isotope', get_template_directory_uri().'/js/jquery.isotope.min.js', array('jquery'),  true );
-    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.js', array('jquery', 'isotope'),  true );
+function load_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/isotope.pkgd.min.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/isotope.pkgd.min.js', array('jquery', 'isotope'),  true );
     wp_register_style( 'style-css', get_stylesheet_directory_uri() . '/style.css' );
 
   	wp_enqueue_script('isotope');
     wp_enqueue_script('isotope-init');
     wp_enqueue_style('style-css');
 }
+
+
+endif;
+
 

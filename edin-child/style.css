@@ -22,6 +22,19 @@
 }
 /* ----------------------------------------- ISOTOPE BEGINS -------------------------------------------------- */
 
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
 * { box-sizing: border-box; }
 
 body {

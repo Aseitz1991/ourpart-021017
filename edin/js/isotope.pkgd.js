@@ -3512,3 +3512,4 @@ var trim = String.prototype.trim ?
   return Isotope;
 
 }));
+
